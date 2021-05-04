@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.4.3</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.oup</groupId>
 	<artifactId>otc-soap-webservice</artifactId>
@@ -27,6 +27,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
+		<dependency>
+			<!-- Starter for using Spring Security -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 		<!-- tag::springws[] -->
 		<dependency>
 			<groupId>wsdl4j</groupId>
@@ -34,13 +39,13 @@
 		</dependency>
 		<!-- end::springws[] -->
 
-    <dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<profiles>
 		<profile>
 			<id>java11</id>
@@ -57,26 +62,26 @@
 		</profile>
 	</profiles>
 
-<build>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>jaxb2-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>s4hana</id>
-              <configuration>
-					<sources>
-						<source>${project.basedir}/src/main/resources/ztest_schema_oup.xsd</source>
-					</sources>
-				</configuration>
-            <goals> 
-              <goal>xjc</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jaxb2-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>s4hana</id>
+						<configuration>
+							<sources>
+								<source>${project.basedir}/src/main/resources/ztest_schema_oup.xsd</source>
+							</sources>
+						</configuration>
+						<goals>
+							<goal>xjc</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
