@@ -23,7 +23,7 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.util.ClassUtils;
 
-import io.spring.guides.gs_producing_web_service.ZTESTSCHEMARequest;
+import com.sap.document.sap.rfc.functions.ZTESTSCHEMARequest;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class ProducingWebServiceApplicationIntegrationTests {

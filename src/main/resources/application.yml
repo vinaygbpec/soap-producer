@@ -1,6 +1,3 @@
 server:
    port: 8080
    
-globalconstants:
-  Notification_AppRoot_Url: http://208.113.164.38:8081/
-  Verification_Url: https://stage-api.legalselfrep.com/

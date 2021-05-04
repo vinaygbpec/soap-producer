@@ -28,13 +28,13 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
 		wsdl11Definition.setPortTypeName("OTCPort");
 		wsdl11Definition.setLocationUri("/ws");
-		wsdl11Definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
+		wsdl11Definition.setTargetNamespace("urn:sap-com:document:sap:rfc:functions");
 		wsdl11Definition.setSchema(countriesSchema);
 		return wsdl11Definition;
 	}
 
 	@Bean
-	public XsdSchema countriesSchema() {
+	public XsdSchema otcSchema() {
 		return new SimpleXsdSchema(new ClassPathResource("ztest_schema_oup.xsd"));
 	}
 }
