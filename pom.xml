@@ -40,6 +40,22 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	<profiles>
+		<profile>
+			<id>java11</id>
+			<activation>
+				<jdk>[11,)</jdk>
+			</activation>
+
+			<dependencies>
+				<dependency>
+					<groupId>org.glassfish.jaxb</groupId>
+					<artifactId>jaxb-runtime</artifactId>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
 
 <build>
     <plugins>
@@ -54,7 +70,7 @@
 						<source>${project.basedir}/src/main/resources/ztest_schema_oup.xsd</source>
 					</sources>
 				</configuration>
-            <goals>
+            <goals> 
               <goal>xjc</goal>
             </goals>
           </execution>
