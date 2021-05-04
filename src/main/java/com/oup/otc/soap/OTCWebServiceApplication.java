@@ -1,12 +1,12 @@
-package com.example.producingwebservice;
+package com.oup.otc.soap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProducingWebServiceApplication {
+public class OTCWebServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProducingWebServiceApplication.class, args);
+		SpringApplication.run(OTCWebServiceApplication.class, args);
 	}
 }
