@@ -1,4 +1,4 @@
-package com.oup.otc.soap;
+package com.oup.integration.endpoint;
 
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;

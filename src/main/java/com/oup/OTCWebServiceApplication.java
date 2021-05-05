@@ -1,4 +1,4 @@
-package com.oup.otc.soap;
+package com.oup;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

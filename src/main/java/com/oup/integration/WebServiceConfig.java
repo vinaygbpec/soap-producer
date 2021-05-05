@@ -1,4 +1,4 @@
-package com.oup.otc.soap;
+package com.oup.integration;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
